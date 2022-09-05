@@ -1,8 +1,12 @@
 /*CUSTOM-PROPS */
 
 :root {
-    --bg-color: ;
-    --text-color: ;
+    --blue: #5267DF;
+    --red: #FA5959;
+    --dark-blue: #242A45;
+    --dark-blue-75: rgb(36, 42, 69, 0.75);
+    --dark-blue-50: rgb(36, 42, 69, 0.5);
+    --grey: #9194A2;
 }
 
 
@@ -86,8 +90,8 @@ body {
     line-height: 36px;
     letter-spacing: 0.15px;
     font-family: "Rubik", "Arial", sans-serif;
-    color: var(--text-color);
-    background-color: var(--bg-color);
+    color: var(--dark-blue-50);
+    background-color: #fff;
 }
 
 img {

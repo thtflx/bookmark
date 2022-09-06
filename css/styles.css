@@ -3,9 +3,9 @@
 :root {
     --blue: #5267DF;
     --red: #FA5959;
-    --dark-blue: #242A45;
-    --dark-blue-75: rgb(36, 42, 69, 0.75);
-    --dark-blue-50: rgb(36, 42, 69, 0.5);
+    --text-color: #242A45;
+    --text-color-75: rgb(36, 42, 69, 0.75);
+    --text-color-50: rgb(36, 42, 69, 0.5);
     --grey: #9194A2;
 }
 
@@ -63,10 +63,11 @@ body {
     padding: 0;
     margin: 0;
     font-size: 16px;
+    overflow-x: hidden;
     line-height: 36px;
     letter-spacing: 0.15px;
     font-family: "Rubik", "Arial", sans-serif;
-    color: var(--dark-blue-50);
+    color: var(--text-color-50);
     background-color: #fff;
 }
 
@@ -124,9 +125,9 @@ select:-webkit-autofill:focus {
 
 .container {
     width: 100%;
-    max-width: 700px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -136,6 +137,208 @@ select:-webkit-autofill:focus {
 
 .main-content {
     flex-grow: 1;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    padding: 8px 22px;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 500;
+    border: 2px solid transparent;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+.button--red {
+    background-color: var(--red);
+    color: #fff;
+}
+
+.button--red:hover {
+    border-color: var(--red);
+    color: var(--red);
+    background-color: #fff;
+}
+
+.button--blue {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.button--blue:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+    background-color: #fff;
+}
+
+.button--grey {
+    background-color: #f7f7f7;
+    color: var(--text-color);
+}
+
+.button--grey:hover {
+    border-color: var(--grey);
+    color: var(--grey);
+    background-color: #fff;
+}
+
+.button--block {
+    display: block;
+    width: 100%;
+}
+
+.button--site-header {
+    padding: 10px 31px;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 1.5;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: block;
+    text-decoration: none;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo:active {
+    opacity: 0.6;
+}
+
+.logo__img {
+    display: block;
+    width: 149px;
+    height: 25px;
+    object-fit: contain;
+}
+
+
+/* SITENAV */
+
+.sitenav {
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.sitenav__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+    margin-right: 48px;
+}
+
+.sitenav__link {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.sitenav__link:hover {
+    color: var(--red);
+}
+
+.sitenav__link:active {
+    opacity: 0.6;
+}
+
+
+/* SITE-HEADER */
+
+.site-header {
+    text-transform: uppercase;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.site-header__container {
+    display: flex;
+    align-items: center;
+}
+
+.site-header__logo {
+    margin-right: auto;
+}
+
+.site-header__sitenav {
+    margin-right: 48px;
+}
+
+
+/* HERO */
+
+.hero {
+    padding-top: 66px;
+    padding-bottom: 105px;
+    background-image: url("../img/blue-pill-bg.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 705px) 200px;
+}
+
+.hero__container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    width: 100%;
+    padding-top: 66px;
+    max-width: 540px;
+    margin-right: 65px;
+}
+
+.hero__heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.hero__actions {
+    display: flex;
+}
+
+.hero__actions__item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.hero__img {
+    flex-shrink: 0;
+    width: 578px;
+    height: 385px;
+    object-fit: contain;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 

@@ -1,2 +1,2 @@
-# bookmark view (link).
-https://tht-bookmark.netlify.app/
+# bookmark view
+(<a href="https://tht-bookmark.netlify.app/">link</a>)

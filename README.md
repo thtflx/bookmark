@@ -1,2 +1,2 @@
-# bookmark preview (link).
+# bookmark view (link).
 https://tht-bookmark.netlify.app/
